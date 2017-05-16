@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prname: MyString
+  maker: MyString
+  description: MyString
+  year: 1
+  cost: 
+  is_here: false
+
+two:
+  prname: MyString
+  maker: MyString
+  description: MyString
+  year: 1
+  cost: 
+  is_here: false

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WTF</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<% if user_signed_in? %>
+ <p> Hello,<%= link_to current_user.email, profile_path  %>   \/\/\/\/   <%= link_to 'Logout', sign_out_path %><p>
+ <% else %>
+<%= link_to 'Registration', sign_up_path %>
+<%= link_to 'Login', sign_in_path %>
+	<% end %>
+
+    <%= yield %>
+  </body>
+</html>
