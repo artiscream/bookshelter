@@ -1,0 +1,6 @@
+<% @orders.each do |order| %>
+<p><%= order.product.prname %>
+<%= link_to "Pay", pay_order_path(order.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-sm btn-size btn-info" %>
+
+<%= link_to "Delete", delete_order_path(order.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-sm btn-size btn-info" %></p>
+<% end %>

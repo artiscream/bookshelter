@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+   <div class="col-sm-6">
+   <div class="panel panel-success">
+   <div class="panel-body">
+   <%= image_tag @product.photo_file_name, size: "500x250" %></br></div>
+   <div class="col-sm-6">
+   <%= @product.description %>
+   <%= @product.maker %>
+   <%= @product.cost %><br>
+
+   <%= link_to "Read Comments", show_comments_path(:id=>@product.id), class: "btn btn-danger" %>
+   
+   	<%= link_to "Buy", buy_product_path(:id=>@product.id), class: "btn btn-success" %>
+   	
+   </div>
+   </div>
+
+	</div>
+  </div>
+  </div>

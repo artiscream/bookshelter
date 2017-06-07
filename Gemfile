@@ -44,6 +44,11 @@ gem 'activeadmin'
 #Avatar
 gem "paperclip", "~> 5.0.0"
 
+ # for design
+ gem 'bootstrap-sass'
+ gem 'bootstrap-will_paginate'
+ gem 'will_paginate'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

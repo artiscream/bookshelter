@@ -4,9 +4,15 @@ class HomeController < ApplicationController
 
 
   def index
+
+  	@products = Product.all
+  
+  	@order = Order.where(is_cart: true).count
+
   end
 
   def show
+  	
   end
 
 

@@ -10,12 +10,33 @@
 
   <body>
 
-<% if user_signed_in? %>
- <p> Hello,<%= link_to current_user.email, profile_path  %>   \/\/\/\/   <%= link_to 'Logout', sign_out_path %><p>
- <% else %>
-<%= link_to 'Registration', sign_up_path %>
-<%= link_to 'Login', sign_in_path %>
-	<% end %>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"<%= link_to "Bookshelter", root_path %>"></a>
+    </div>
+    <!---<ul class="nav navbar-nav">
+      <li class="active"><a href="#">Member</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+
+
+      </span>
+
+    </ul> -->
+    <ul class="nav navbar-nav navbar-right">
+    <% if user_signed_in? %>
+    <p><%= link_to "My Cart", orders_path %></p>
+
+    <li><%= link_to current_user.email, profile_path %></li> | <li><%= link_to 'Logout', sign_out_path %></li>
+    <% else %>
+    <li><%= link_to 'Registration', sign_up_path %></li>
+   <li><%= link_to 'Login', sign_in_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</nav> 
+
 
     <%= yield %>
   </body>

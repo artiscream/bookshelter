@@ -12,6 +12,6 @@ ActiveAdmin.register Product do
 #   permitted
 # end
 
-permit_params :prname, :maker, :description, :year, :cost, :is_here, :photo	
+permit_params :prname, :maker, :description, :year, :cost, :is_here, :photo	, :photo_file_name
 
 end
