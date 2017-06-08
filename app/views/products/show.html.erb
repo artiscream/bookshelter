@@ -22,10 +22,17 @@
   </div>
   </div>
 
-<script>$(function () {
+<script>
  
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
+$(function () {
  
-});</script>
+  $("#rateYo").rateYo()
+              .on("rateyo.set", function (e, data) {
+ 
+                  $("#rateYo").rateYo("option", "readOnly", true);
+                  
+              });
+});
+
+</script>
+

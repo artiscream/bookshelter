@@ -7006,3 +7006,642 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 926ms (Views: 902.9ms | ActiveRecord: 2.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-08 23:50:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "orders" WHERE "orders"."is_cart" = ?[0m  [["is_cart", true]]
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (15543.7ms)
+Completed 200 OK in 16372ms (Views: 16300.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:50:31 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 1078ms (Views: 1041.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:53:52 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 797ms (Views: 783.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:54:05 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 586ms (Views: 578.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:54:26 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 809ms (Views: 801.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:55:33 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 581ms (Views: 575.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:56:08 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 953ms (Views: 945.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:56:55 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 687ms (Views: 682.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-08 23:59:19 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 926ms (Views: 914.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:01:22 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 915ms (Views: 899.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:01:34 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 709ms (Views: 703.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:01:57 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (5.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 1040ms (Views: 1011.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:03:22 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 932ms (Views: 921.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:03:32 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 1190ms (Views: 1176.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:03:47 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 898ms (Views: 888.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:03:58 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 722ms (Views: 710.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:04:30 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 753ms (Views: 747.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:04:44 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 855ms (Views: 850.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:05:13 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 887ms (Views: 880.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:05:36 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 631ms (Views: 623.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:06:31 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 788ms (Views: 777.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:06:47 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 889ms (Views: 880.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:08:40 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 1273ms (Views: 1258.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:08:52 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1685ms (Views: 1669.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:09:57 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 1069ms (Views: 1057.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:12:43 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 1057ms (Views: 1050.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:12:46 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 1007ms (Views: 993.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:13:53 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 808ms (Views: 798.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:14:13 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 658ms (Views: 651.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:15:07 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 572ms (Views: 566.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:15:16 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 766ms (Views: 755.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:15:32 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 1121ms (Views: 1110.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:19:14 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 1277ms (Views: 1262.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:19:44 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 957ms (Views: 941.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:20:31 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 1383ms (Views: 1377.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:20:34 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 883ms (Views: 869.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:20:57 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 1115ms (Views: 1087.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:27:49 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 1170ms (Views: 1163.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:37:34 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 1037ms (Views: 1022.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:37:47 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 628ms (Views: 623.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:37:58 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 725ms (Views: 720.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:38:03 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 859ms (Views: 832.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:38:13 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 707ms (Views: 700.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:38:29 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 819ms (Views: 809.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:39:15 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 811ms (Views: 797.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:40:03 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (14.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 1032ms (Views: 1002.5ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/show_comments?id=1" for 127.0.0.1 at 2017-06-09 00:40:12 +0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 1]]
+  Rendered comments/_form.html.erb (183.3ms)
+  Rendered comments/show.html.erb within layouts/application (269.5ms)
+Completed 200 OK in 1307ms (Views: 1211.0ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:40:18 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (77.4ms)
+Completed 200 OK in 1376ms (Views: 1356.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:43:16 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 1152ms (Views: 1144.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:44:07 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 1079ms (Views: 1069.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/buy_product?id=1" for 127.0.0.1 at 2017-06-09 00:47:50 +0300
+Processing by OrdersController#new as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-06-09 00:47:50 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (6.5ms)
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (139.9ms)
+Completed 200 OK in 1035ms (Views: 936.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2017-06-09 00:48:04 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 1130ms (Views: 1099.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-06-09 01:03:16 +0300
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-06-09 01:03:16 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/shared/_links.erb (2.2ms)
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (99.7ms)
+Completed 200 OK in 678ms (Views: 646.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-06-09 01:03:43 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jVWwbUb2QwMNytobOx5SFM135kcj4OCMwbBxsoYbYV4Xy1My2F8Cc65oBmQBYClDiXNtDIfNrPldYvBn65tbnw==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "admin_users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["current_sign_in_at", 2017-06-08 22:03:44 UTC], ["last_sign_in_at", 2017-05-19 12:28:14 UTC], ["sign_in_count", 6], ["updated_at", 2017-06-08 22:03:44 UTC], ["id", 1]]
+  [1m[35m (176.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 1177ms (ActiveRecord: 178.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-06-09 01:03:46 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/page/index.html.arb (456.6ms)
+Completed 200 OK in 578ms (Views: 490.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-06-09 01:03:49 +0300
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/index.html.arb (934.1ms)
+Completed 200 OK in 1063ms (Views: 1046.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/admin_users/new" for 127.0.0.1 at 2017-06-09 01:03:59 +0300
+Processing by Admin::AdminUsersController#new as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/new.html.arb
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/new.html.arb (863.8ms)
+Completed 200 OK in 945ms (Views: 920.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/admin/admin_users" for 127.0.0.1 at 2017-06-09 01:04:18 +0300
+Processing by Admin::AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a4aMYxbIzldHUrsbDXvyyJihV3kfaQH18qOE1aJm+bC9MxLh1aIWTZqEXaZPhOX3TgB3CShuZMj1TPOzTUG0cw==", "admin_user"=>{"email"=>"arti_scream@ukr.net", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "arti_scream@ukr.net"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "arti_scream@ukr.net"], ["encrypted_password", "$2a$11$0Ibqz27z1J6yiB/6dPa6felHzjWNURl09YircVk4npq5klesb1Z9i"], ["created_at", 2017-06-08 22:04:19 UTC], ["updated_at", 2017-06-08 22:04:19 UTC]]
+  [1m[35m (33.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/admin_users/2
+Completed 302 Found in 755ms (ActiveRecord: 36.4ms)
+
+
+Started GET "/admin/admin_users/2" for 127.0.0.1 at 2017-06-09 01:04:20 +0300
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 2 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["namespace", "admin"]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 2 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["namespace", "admin"]]
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/show.html.arb (931.4ms)
+Completed 200 OK in 1124ms (Views: 1094.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-06-09 01:04:27 +0300
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (3.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/index.html.arb (537.5ms)
+Completed 200 OK in 567ms (Views: 545.0ms | ActiveRecord: 5.9ms)
+
+
+Started DELETE "/admin/admin_users/1" for 127.0.0.1 at 2017-06-09 01:04:36 +0300
+Processing by Admin::AdminUsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eZQVVM+7KF8Pm+bQpIwe3OOu3Q+ZpT0VbuXcTLW3/a+vIYvWDNHwRdJNAG3mcwnjNQ/9f66iWChpCqsqWpCwbA==", "id"=>"1"}
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (3.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (23.3ms)[0m  [1m[31mDELETE FROM "admin_users" WHERE "admin_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (65.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/admin_users
+Completed 302 Found in 202ms (ActiveRecord: 93.3ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-06-09 01:04:36 +0300
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (2.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 14ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-06-09 01:04:36 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/shared/_links.erb (4.7ms)
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (101.4ms)
+Completed 200 OK in 662ms (Views: 657.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-06-09 01:04:45 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xCkOFj9fUuXmPMpkrR4Q6ydRKNuR15nEQpQD07lDp6gSnJCU/DWK/zvqLNnv4QfU8fAIq6bQ/PlFe3S1VmTqaw==", "admin_user"=>{"email"=>"arti_scream@ukr.net", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "arti_scream@ukr.net"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "admin_users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["current_sign_in_at", 2017-06-08 22:04:46 UTC], ["last_sign_in_at", 2017-06-08 22:04:46 UTC], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", 2017-06-08 22:04:46 UTC], ["id", 2]]
+  [1m[35m (40.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/admin_users
+Completed 302 Found in 824ms (ActiveRecord: 42.2ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-06-09 01:04:47 +0300
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (7.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/resource/index.html.arb (797.2ms)
+Completed 200 OK in 836ms (Views: 816.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2017-06-09 01:05:05 +0300
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eD6iXy2M4H3dDiV09VqAm1+5aH76baKqwUZTjommbWQby3o2626LNIuhFW+vXLh8aLYJ+/hNLpfSotjVx70ByQ=="}
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 107ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-06-09 01:05:05 +0300
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-06-09 01:05:06 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/shared/_links.erb (3.7ms)
+  Rendered /home/arti/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.0.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (39.8ms)
+Completed 200 OK in 472ms (Views: 466.5ms | ActiveRecord: 0.0ms)
+
+
