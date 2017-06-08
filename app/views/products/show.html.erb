@@ -9,6 +9,8 @@
    <%= @product.maker %>
    <%= @product.cost %><br>
 
+   <div id="rateYo">Rating</div>
+
    <%= link_to "Read Comments", show_comments_path(:id=>@product.id), class: "btn btn-danger" %>
    
    	<%= link_to "Buy", buy_product_path(:id=>@product.id), class: "btn btn-success" %>
@@ -19,3 +21,11 @@
 	</div>
   </div>
   </div>
+
+<script>$(function () {
+ 
+  $("#rateYo").rateYo({
+    rating: 3.6
+  });
+ 
+});</script>

@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# gem for rating system 08.06
+gem 'rateyo-rails'
+
 #devise(authorisation)
 gem 'devise'
 
