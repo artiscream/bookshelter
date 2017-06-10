@@ -1,0 +1,11 @@
+<% if @comments == nil %>
+<p> There are no comments yet. But you can write it. </p>
+<% else %>
+<% @comments.each do |comment| %>
+<p> <%= comment.body %>
+
+<%= link_to 'Delete', book_comment_path(:id=>comment.id), method: :put, data: {confirm: 'Are_you_sure?'} %></p>
+<% end %>
+<% end %>
+<h2>Add a comment <h2>
+<%= render 'comments/form' %>

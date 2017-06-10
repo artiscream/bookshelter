@@ -1,0 +1,40 @@
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag  @book.image, size: "250x250" %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @book.description %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @book.year %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @book.cost %>
+</p>
+
+<p>
+  <strong>Is here:</strong>
+  <%= @book.is_here %>
+</p>
+
+
+<%= link_to 'Back', books_path %> | <%= link_to "Read Comments", show_comments_path(:id=>@book.id), class: "btn btn-danger" %> |  <%= link_to "Buy", buy_book_path(:id=>@book.id), class: "btn btn-success" %>
+    

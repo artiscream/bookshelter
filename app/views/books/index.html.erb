@@ -1,0 +1,41 @@
+<h1>Books</h1>
+
+<hr>
+    <% @books.each do |book| %>
+     
+     <div class="col-sm-6 col-md-4">
+          <div class="thumbnail"> 
+        
+              <h2 style="text-align:center;"><%= link_to book.title, book_path(book) %></h2> 
+                  <%= image_tag(book.image, size: "250x304") %>
+
+              <div class="caption" style="text-align: center;">
+              <% if user_signed_in? %>
+                <%= link_to like_book_path(book), class: "like", method: :put do%>
+                <button type="button" class="btn btn-info" aria-label="Left Align">
+                <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+                <span class="badge"><%= book.get_upvotes.size %></span>
+                </button>
+                <% end %>
+
+                <%= link_to dislike_book_path(book), class: "like", method: :put do%>
+                <button type="button" class="btn btn-info" aria-label="Left Align">
+                <span class="glyphicon glyphicon-thumbs-down glyphicon-align-center" aria-hidden="true"></span>
+                <span class="badge"><%= book.get_downvotes.size %></span>
+                </button>
+                <% end %>
+                <% else %>
+                <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+                <span class="badge"><%= book.get_upvotes.size %></span>
+                <span class="glyphicon glyphicon-thumbs-down glyphicon-align-center" aria-hidden="true"></span>
+                <span class="badge"><%= book.get_downvotes.size %></span>
+                <% end %>
+              </div>
+          </div> 
+      
+     </div>
+
+    <% end %>
+ 
+
+
