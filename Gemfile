@@ -37,6 +37,8 @@ gem 'devise'
 
 gem 'activeadmin'
 
+gem 'paperclip'
+
 #rating
 gem 'acts_as_votable'
 
