@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
   root 'books#index'
+
 
 
 get 'show_comments', to: 'comments#show'
@@ -29,6 +31,17 @@ resources :comments
       end
    end
 
+   resources :waitlists do
+    resources :books
+  end
+
+  resources :waitlists do 
+    member do
+      put :delete
+    end
+end
+
     get 'buy_book', to: 'orders#new'
+    get 'add_book_to_waitlist', to: 'waitlists#new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

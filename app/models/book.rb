@@ -4,4 +4,5 @@ class Book < ApplicationRecord
   	validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 	has_many :comments
 	has_many :orders
+	has_many :waitlists
 end

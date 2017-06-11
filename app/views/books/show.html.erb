@@ -36,5 +36,6 @@
 </p>
 
 
-<%= link_to 'Back', books_path %> | <%= link_to "Read Comments", show_comments_path(:id=>@book.id), class: "btn btn-danger" %> |  <%= link_to "Buy", buy_book_path(:id=>@book.id), class: "btn btn-success" %>
+<%= link_to 'Back', books_path %> | <%= link_to "Read Comments", show_comments_path(:id=>@book.id), class: "btn btn-danger" %> | <% if @book.is_here == true %> <%= link_to "Buy", buy_book_path(:id=>@book.id), class: "btn btn-success" %>  <% else %> <%= link_to "Add to wishlist",add_book_to_waitlist_path(:id=>@book.id), class: "btn btn-success" %> <% end %>
+
     

@@ -38,6 +38,7 @@
            <% end %>
            <div class="navbar-right navbar-brand">Hello, <%= current_user.email %>! </div> <br>
            <p><%= link_to "My Cart", orders_path %></p>
+           <p><%= link_to "Waitlist", waitlists_path %></p>
            <% else %>
            			<%= link_to new_user_session_path do%>
            <button type="button" class="btn btn-default navbar-btn">Log in</button> 

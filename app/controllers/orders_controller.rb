@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
 
   def index
   	@orders = Order.where(user_id: current_user.id).where(is_cart: true)
-  
+    @user = User.where(user_id: current_user.id)
   end
 
   def pay
