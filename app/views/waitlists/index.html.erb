@@ -1,5 +1,16 @@
 
 
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">ORDERS</h3>
+      
+    <div class="row text-left">
+    <div class="col-sm-12">
+
+ 
+     
+        <div class="thumbnail">
+
 
 
 <h2>In your waitlist at moment.</h2>
@@ -8,10 +19,23 @@ When book will arrive you will see "buy that" button here.</br>
 <p><%= wait.book.title %>
 <%= wait.book.cost %>
 <% if  wait.book.is_here == true %> 
-<% UserMailer.subemail(@user).deliver_later %>
+<% UserMailer.subemail(current_user).deliver_now %>
 
-<%= link_to "Buy that !", book_path(:id=>wait.book.id), class: "btn btn-sm btn-size btn-info" %>
+<%= link_to "Buy that !", book_path(:id=>wait.book.id),class: "btn btn-modal" %>
 <% end %>
-<%= link_to "Delete this waitlist entry", delete_waitlist_path(wait.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-sm btn-size btn-info" %></p>
+<%= link_to "Delete this waitlist entry", delete_waitlist_path(wait.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-modal" %></p>
 <% end %>
+
+
+
+  
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
 

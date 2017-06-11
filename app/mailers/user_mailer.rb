@@ -7,4 +7,5 @@ class UserMailer < ApplicationMailer
 		mail(to: @user.email, subject: 'Book subscription')
 	end
 
+	
 end

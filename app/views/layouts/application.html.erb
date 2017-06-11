@@ -7,46 +7,102 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
   </head>
 
   <body>
 
-  	<div class = "container">
-    
-     <div class="container-fluid">
-      <div class="navbar-header">
-       <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span> 
-        <span class="icon-bar"></span> 
-        <span class="icon-bar"></span> 
-        <span class="icon-bar"></span> 
-        </button>
-         <a class="navbar-brand"<%= link_to "Bookshelter", root_path %></a>
-      </div>
 
-           	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3"> 
-           	<% if user_signed_in? %>
-           	<%= link_to destroy_user_session_path, method: :delete do%>
-           <button type="button" class="btn btn-default navbar-btn">Logout</button> 
-           <% end %>
-           <div class="navbar-right navbar-brand">Hello, <%= current_user.email %>! </div> <br>
-           <p><%= link_to "My Cart", orders_path %></p>
-           <p><%= link_to "Waitlist", waitlists_path %></p>
+
+    <div class="page">
+
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        
+      </button>
+
+       <img src="/images/logo.png" style="width:8%;">
+
+      <%= link_to "Bookshelter", root_path %>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+<br>
+<% if user_signed_in? %>
+<li>  
+<span class="glyphicon glyphicon-user">
+Hello, <%= current_user.email %>!
+</span> &nbsp&nbsp&nbsp
+</li>       
+ 
+
+<li>          
+<span class="glyphicon glyphicon-shopping-cart">
+<%= link_to "My Cart", orders_path %> 
+</span>&nbsp&nbsp&nbsp
+</li>       
+
+
+
+<li>          
+<span class="glyphicon glyphicon-bookmark">
+<%= link_to "Waitlist", waitlists_path %> 
+</span>&nbsp&nbsp&nbsp
+</li>       
+
+
+<li>  
+<span class="glyphicon glyphicon-off"> 
+<%= link_to destroy_user_session_path, method: :delete do%>
+Logout           
+<% end %>
+</span>
+</li> 
+
            <% else %>
-           			<%= link_to new_user_session_path do%>
-           <button type="button" class="btn btn-default navbar-btn">Log in</button> 
+          <%= link_to new_user_session_path do%>
+          <li> Log in</li>
            <% end %>
            <% end %>
-        	</div> 
+
+
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+
+
+
+
+
+          </div> 
 
      </div> 
+
+
 
 
     <%= yield %>

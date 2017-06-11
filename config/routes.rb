@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root 'books#index'
 
 
-
+get 'make_feedback', to: 'home#feedback'
 get 'show_comments', to: 'comments#show'
  put 'book_comment', to: 'comments#destroy'
 
@@ -39,6 +39,10 @@ resources :comments
     member do
       put :delete
     end
+end
+
+resources :users do 
+  resources :feedbacks 
 end
 
     get 'buy_book', to: 'orders#new'

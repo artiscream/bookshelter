@@ -57,7 +57,7 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "books_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
-  config.action_mailer.delivery_method = :sendemail
+  
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_options = {from: 'pugaartur@gmail.com'}
@@ -66,11 +66,11 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'mail.google.com',
-  user_name:            'arturpuga',
+  domain:               'gmail.com',
+  user_name:            'pugaartur@gmail.com',
   password:             'youknownothinggoogle1',
   authentication:       'plain',
-  enable_starttls_auto: true  }
+   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

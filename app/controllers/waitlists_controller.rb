@@ -9,7 +9,7 @@ class WaitlistsController < ApplicationController
   def index
   
   	@waitlists = Waitlist.where(user_id: current_user.id) 
-
+    
   end
 
   def delete

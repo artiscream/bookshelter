@@ -1,6 +1,39 @@
-<% @orders.each do |order| %>
-<p><%= order.book.title %>
-<%= link_to "Pay", pay_order_path(order.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-sm btn-size btn-info" %>
 
-<%= link_to "Delete", delete_order_path(order.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-sm btn-size btn-info" %></p>
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">ORDERS</h3>
+      
+    <div class="row text-left">
+    <div class="col-sm-12">
+
+ 
+     
+        <div class="thumbnail">
+
+
+<% @orders.each do |order| %>
+<p><strong><%= order.book.title %></strong></p>
+
+
+<%= link_to "Pay", pay_order_path(order.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-modal" %>
+
+<%= link_to "Delete", delete_order_path(order.id), method: :put, data: {confirm: 'Are you sure?'},class: "btn btn-modal" %></p>
+  <hr>
 <% end %>
+
+
+
+
+  
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+

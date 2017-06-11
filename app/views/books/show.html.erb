@@ -1,41 +1,50 @@
 
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">WARE</h3>
+      
+    <div class="row text-center">
+    <div class="col-sm-12">
+
+ 
+     
+        <div class="thumbnail">
+
+      <p> <strong><%= @book.title %></strong></p>
+       <%= image_tag  @book.image, size: "400x300" %>
+
+   <p> <strong>Author:</strong> <%= @book.author %></p>
+ <p> <strong> Description:</strong><%= @book.description %></p>
+<p>  <strong>Year:</strong>  <%= @book.year %></p>
+
+<p><strong>Cost:</strong>
+<span class="w3-tag w3-xlarge">
+<%= @book.cost %>$</p>
+</span>
+
+<p><strong>Is here:</strong>
+<span class="w3-tag">
+<%= @book.is_here %>
+</span>
 </p>
+   <%= link_to 'Back', books_path, class: "btn btn-modal"  %> 
+   <%= link_to "Read Comments", show_comments_path(:id=>@book.id), class: "btn btn-modal" %> 
+   
+<% if @book.is_here == true %> 
+   <%= link_to "Buy", buy_book_path(:id=>@book.id), class: "btn btn-modal" %>
+ <% else %> <%= link_to "Add to wishlist",add_book_to_waitlist_path(:id=>@book.id), class: "btn btn-modal" %> 
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag  @book.image, size: "250x250" %>
-</p>
+ <% end %>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+       
 
-<p>
-  <strong>Description:</strong>
-  <%= @book.description %>
-</p>
-
-<p>
-  <strong>Year:</strong>
-  <%= @book.year %>
-</p>
-
-<p>
-  <strong>Cost:</strong>
-  <%= @book.cost %>
-</p>
-
-<p>
-  <strong>Is here:</strong>
-  <%= @book.is_here %>
-</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
-<%= link_to 'Back', books_path %> | <%= link_to "Read Comments", show_comments_path(:id=>@book.id), class: "btn btn-danger" %> | <% if @book.is_here == true %> <%= link_to "Buy", buy_book_path(:id=>@book.id), class: "btn btn-success" %>  <% else %> <%= link_to "Add to wishlist",add_book_to_waitlist_path(:id=>@book.id), class: "btn btn-success" %> <% end %>
 
-    

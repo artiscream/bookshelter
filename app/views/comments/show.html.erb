@@ -1,11 +1,47 @@
+
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">COMMENTS</h3>
+      
+    <div class="row text-left">
+    <div class="col-sm-12">
+
+ 
+     
+        <div class="thumbnail">
+
+
 <% if @comments == nil %>
 <p> There are no comments yet. But you can write it. </p>
 <% else %>
-<% @comments.each do |comment| %>
-<p> <%= comment.body %>
 
-<%= link_to 'Delete', book_comment_path(:id=>comment.id), method: :put, data: {confirm: 'Are_you_sure?'} %></p>
+
+<% @comments.each do |comment| %>
+
+
+ <p><strong> <%= current_user.email %></strong></p>
+<p><%= comment.body %></p>
+<p><%= link_to 'Delete', book_comment_path(:id=>comment.id), method: :put, data: {confirm: 'Are_you_sure?'} , class: "btn btn-modal" %></p>
+
+  <hr>
+
+
+
 <% end %>
 <% end %>
-<h2>Add a comment <h2>
+
+
+<strong>Add a comment</strong>
 <%= render 'comments/form' %>
+
+  
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
