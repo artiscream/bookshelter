@@ -19,7 +19,7 @@ When book will arrive you will see "buy that" button here.</br>
 <p><%= wait.book.title %>
 <%= wait.book.cost %>
 <% if  wait.book.is_here == true %> 
-
+<% UserMailer.subemail(current_user).deliver_now %>
 
 <%= link_to "Buy that !", book_path(:id=>wait.book.id),class: "btn btn-modal" %>
 <% end %>
