@@ -129,11 +129,12 @@ div.page {
 }
 div.block {
 	float: center;
-	width:75%; 
-	height:100%; 
-   background-color:#ffffff; border:1px solid #333333;
-
-
+	width:230px; 
+	height:250px; 
+   background-color:#ffffff; 
+ margin-left: 35px;
+      color: #555;
+      border-radius: 0;
 
 }
 
@@ -287,3 +288,4 @@ body {
   textarea {
       resize: none;
   }
+
